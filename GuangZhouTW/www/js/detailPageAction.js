@@ -7,13 +7,13 @@ $('#goBack').click(function () {
 });
 
 $('#goBack-detail').click(function () {
-    showDashBoard();
     $('.detail-all').addClass('slidePageBackLeft').removeClass('slidePageInFromLeft');
+    showDashBoard();
 });
 
 function showDashBoard() {
     //    $('#companyid').fadeIn(200);
-    for (var i = 1; i <= 3; i++) {
+    for (var i = 1; i <= 2; i++) {
         $('.col' + i).each(function () {
             $(this).addClass('fadeInForward-' + i).removeClass('fadeOutback');
         });
@@ -29,7 +29,7 @@ function getUrlParam(name) {
     return null;
 }
 function fadeDashBoard() {
-    for (var i = 1; i <= 3; i++) {
+    for (var i = 1; i <= 2; i++) {
         $('.col' + i).addClass('fadeOutback').removeClass('fadeInForward-' + i);
     }
     //    $('#companyid').fadeOut(200);
@@ -47,9 +47,7 @@ $('.big, .small').each(function () {
         page = $this.data('page');
     $this.on('click', function () {
         fadeDashBoard();
-        setTimeout(function () {
-            $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
-        }, 300);
+        $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
     })
 });
 

@@ -26,21 +26,17 @@
                     世界著名的施工升降机制造公司之一
                 </div>
             </div>
+            <div class="columns">
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <p>
-                        {{item.name}}
-                    </p>
-                    <span class="icon-font  center">{{item.memo}}</span>
+                <div ng-repeat="item in leftsideitems" style="background-image:url('{{item.img}}')" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">{{item.name}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <p>
-                        {{item.name}}
-                    </p>
-                    <span class="icon-font  center">{{item.memo}}</span>
+                <div ng-repeat="item in rightsideitems" style="background-image:url('{{item.img}}')"  ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">{{item.name}}</div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

@@ -13,7 +13,28 @@
 </head>
 <body ng-controller="SolutionListCtrl">
     <!--===============================Start Demo====================================================-->
-    <div class="demo-wrapper">
+    <div class="demo-wrapper">    
+        <div class="detail-all" id="detail-all">
+            <div class="company" id="companyid" style="font-family: '微软雅黑';
+                margin-top: 1em;">
+                <div class="detailtitle">
+                    <div id="goBack-detail" class="goBack-detail">
+                        <img class="goImg" src="images/arrow-left-c.png"/>
+                    </div>
+                    <div style="display: inline; margin-left: atuo;">
+                        {{title}}</div>
+                    <div id="more-detail"  class="more-detail">
+                        <img class="goImg" src="images/ios7-more.png"  />
+                    </div>
+                </div>
+                <div class="secondheader">
+                    {{secondtitle}}
+                </div>
+            </div>
+            <div id="productcontent" class="productcontent">
+                <!--{{content}}-->
+            </div>
+        </div>
         <div class="dashboard clearfix">
             <div class="pageheader" id="companyid">
                 <div class="firstheader">
@@ -27,19 +48,13 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="background-color:{{item.color}};">
-                    <p>
-                        {{item.title}}
-                    </p>
-                    <span class="icon-font  center">{{item.memo}}</span>
+                <div ng-repeat="item in leftsideitems" style="background-image:url('{{item.img}}')" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">{{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="background-color:{{item.color}};">
-                    <p>
-                        {{item.title}}
-                    </p>
-                    <span class="icon-font  center">{{item.memo}}</span>
+                <div ng-repeat="item in rightsideitems" style="background-image:url('{{item.img}}')"  ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">{{item.title}}</div>
                 </div>
             </div>
         </div>
@@ -51,7 +66,7 @@
     <script src="js/jquery-1.8.2.min.js"></script>
     <script src="js/modernizr-1.5.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-    <script src="js/pageaction.js"></script>    
+    <script src="js/detailPageAction.js"></script>    
     <!-- Cordova 引用，它在生成应用程序时添加到其中。 -->
     <script src="cordova.js"></script>
     <script src="js/platformOverrides.js"></script>

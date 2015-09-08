@@ -20,26 +20,6 @@
 
 
     function onBackKeyDown() {
-        //非主页的返回键处理
-        if (window.location.pathname != null) {
-            var path = window.location.pathname;
-            var pA = new Array();
-            pA = path.split('/');
-            var htmlName;
-            if (pA.length > 0)
-                htmlName = pA[pA.length - 1];
-
-            if ($("#detail-all") != null && $("#detail-all").css("left") == "0px") {
-                $("#goBack-detail").click();
-                return;
-            }
-            if (htmlName != "index.html") {
-                if ($("#goBack") != null)
-                    $("#goBack").click();
-                return;
-            }
-
-        }
         //navigator.toast.showlong("再点击一次退出");
         document.removeEventListener("backbutton", onBackKeyDown, false); // 注销返回键  
         document.addEventListener("backbutton", exitApp, false);//绑定退出事件  

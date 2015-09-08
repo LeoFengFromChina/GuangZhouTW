@@ -1,4 +1,116 @@
-﻿/*********************************************************
+﻿
+/*********************************************************
+------------------首页Controller--------------------
+*********************************************************/
+function IndexCtrl($scope) {
+
+    //这里需要请求动态数据
+    var alldata = [
+      {
+          "id": 1,
+          "pagetype": "html",
+          "title": "产品展示",
+          "displaytitle": "none",
+          "img": "images/chrome.png",
+          "url": "product-type",
+          "height": "230px",
+          "color": "#FF563A",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 2,
+          "pagetype": "html",
+          "title": "产品配件",
+          "displaytitle": "none",
+          "img": "images/firefox.png",
+          "url": "component-list",
+          "height": "120px",
+          "color": "#92D050",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 3,
+          "pagetype": "html",
+          "title": "工程案例",
+          "displaytitle": "none",
+          "img": "images/safari.png",
+          "url": "solution",
+          "height": "230px",
+          "color": "#00B0F0",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 4,
+          "pagetype": "html",
+          "title": "关于特威",
+          "displaytitle": "none",
+          "img": "images/ie.png",
+          "url": "about",
+          "height": "200px",
+          "color": "#FFC000",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 5,
+          "pagetype": "div",
+          "title": "视频",
+          "displaytitle": "none",
+          "img": "images/firefox.png",
+          "url": "video",
+          "height": "60px",
+          "color": "#FA3636",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 6,
+          "pagetype": "html",
+          "title": "特威服务",
+          "displaytitle": "none",
+          "img": "images/safari.png",
+          "url": "service",
+          "height": "200px",
+          "color": "#FF218B",
+          "memo": "普通施工升降机"
+      }
+    ];
+    if (alldata != null && alldata.length > 0) {
+        //左右两列数据
+        var left = new Array();
+        var right = new Array();
+
+        //按列平均，如果需要按行平均，则修改这里即可
+        for (var i = 0; i < alldata.length; i++) {
+            if (i % 2 == 0)
+                left.push(alldata[i]);
+            else
+                right.push(alldata[i]);
+        }
+
+        //定义左右两个作用于，用于前端遍历显示
+        $scope.leftsideitems = left;
+        $scope.rightsideitems = right;
+    }
+
+    //按钮事件
+    $scope.ngClick = function (item) {
+        //根据Item的产品id获取产品的详细内容。
+        if (item.pagetype == "html")
+            navigateToNewUrl(item.url + ".html");
+        else if (item.pagetype == "div") {
+            $scope.title = item.title;
+            $scope.secondtitle = "2015-09-01";
+            $scope.content = " <div class='videocontent'><video src='http://www.w3school.com.cn/i/movie.mp4' width='100%' height='auto' controls='controls'>  Your browser does not support the video tag.</video></div>";
+            fadeDashBoard();
+            $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
+            //当前窗口的高度，减去(标题的高+margin-top)
+            $("#productcontent").height(window.innerHeight - 100 + "px");
+            //用直接设置html的方法显示图片
+            $("#productcontent").html($scope.content);
+        }
+    }
+}
+
+/*********************************************************
 ------------------产品类型Controller--------------------
 *********************************************************/
 function ProductTypeCtrl($scope, $http) {
@@ -147,9 +259,7 @@ function ProductListCtrl($scope) {
         $scope.secondtitle = "2015-09-01";
         $scope.content = "<img src='images/tw01.jpg' />Begin--SC系列普通施工升降机是我们公司主打产品之一，<img src='images/firefox.png' />它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.<img src='images/chrome.png' />SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，<img src='images/safari.png' />并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势End";
         fadeDashBoard();
-        setTimeout(function () {
-            $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
-        }, 300);
+        $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
         //当前窗口的高度，减去(标题的高+margin-top)
         $("#productcontent").height(window.innerHeight - 100 + "px");
         //用直接设置html的方法显示图片
@@ -307,15 +417,20 @@ function SolutionListCtrl($scope) {
     //定义左右两个作用于，用于前端遍历显示
     $scope.leftsideitems = left;
     $scope.rightsideitems = right;
+
+
     //按钮事件
     $scope.ngClick = function (item) {
         //根据Item的产品id获取产品的详细内容。
+        $scope.title = "代表性建筑";
+        $scope.content = "<img src='images/gcal/db001.jpg' /><img src='images/gcal/db002.jpg' />";
+        $scope.secondtitle = "2015-09-01";
 
-        $scope.title = "产品X001明细";
-        $scope.content = "SC系列普通施工升降机是我们公司主打产品之一，它具有直接启动，机构简单等优点，并且相对国内同类产品它具有更明显优势.";
         fadeDashBoard();
-        setTimeout(function () {
-            $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
-        }, 300);
+        $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
+        //当前窗口的高度，减去(标题的高+margin-top)
+        $("#productcontent").height(window.innerHeight - 100 + "px");
+        //用直接设置html的方法显示图片
+        $("#productcontent").html($scope.content);
     }
 }

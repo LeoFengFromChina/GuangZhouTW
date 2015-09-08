@@ -19,9 +19,12 @@
     "www\\js\\platformOverrides.js",
     "res\\icons\\windows\\StoreLogo.scale-100.png",
     "plugins\\org.apache.cordova.dialogs\\NOTICE",
+    "www\\www_20150907_2346.rar",
     "www\\css\\detailPage.css",
     "res\\icons\\android\\icon-48-mdpi.png",
     "plugins\\org.apache.cordova.dialogs\\doc\\ko\\index.md",
+    "www\\component-list.html",
+    "www\\js\\device.js",
     "res\\icons\\ios\\icon-72.png",
     "res\\icons\\ios\\icon-76.png",
     "www\\service.html",
@@ -42,6 +45,7 @@
     "res\\screens\\android\\screen-hdpi-portrait.png",
     "plugins\\org.apache.cordova.dialogs\\RELEASENOTES.md",
     "www\\www_20150906_2309.rar",
+    "www\\images\\arrow-left-c.png",
     "plugins\\org.apache.cordova.dialogs\\src\\ubuntu\\notification.cpp",
     "res\\icons\\windows\\StoreLogo.scale-240.png",
     "res\\screens\\ios\\screen-ipad-landscape.png",
@@ -54,7 +58,6 @@
     "res\\icons\\ios\\icon-60-3x.png",
     "plugins\\fetch.json",
     "plugins\\org.apache.cordova.dialogs\\doc\\fr\\index.md",
-    "config.xml",
     "plugins\\org.apache.cordova.dialogs\\src\\ubuntu\\notification.h",
     "res\\screens\\wp8\\SplashScreenImage.jpg",
     "plugins\\org.apache.cordova.dialogs\\doc\\it\\index.md",
@@ -75,6 +78,7 @@
     "res\\icons\\ios\\icon-72-2x.png",
     "res\\icons\\ios\\icon-76-2x.png",
     "plugins\\org.apache.cordova.dialogs\\src\\ios\\CDVNotification.bundle\\beep.wav",
+    "www\\images\\ios7-more.png",
     "www\\js\\angular-1.0.1.min.js",
     "res\\icons\\ios\\icon-small.png",
     "plugins\\org.apache.cordova.dialogs\\src\\wp\\NotificationBox.xaml",
@@ -146,21 +150,22 @@
     "res\\icons\\windows\\Square44x44Logo.scale-240.png",
     "res\\screens\\android\\screen-mdpi-portrait.png",
     "www\\fonts\\demo-icomoon.woff",
-    "www\\images\\arrow-left-c.png",
-    "www\\images\\ios7-more.png",
-    "www\\component-list.html",
-    "www\\js\\device.js"
-  ],
-  "deletedFilesIos": [
+    "www\\images\\gcal\\db001.jpg",
+    "www\\images\\gcal\\db002.jpg",
     "www\\js\\index.js",
-    "www\\component-List.html"
+    "www\\images\\ios7-arrow-thin-left.png",
+    "www\\css\\detailpage.css",
+    "www\\js\\detailpageaction.js",
+    "res\\native\\android\\gztw.keystore",
+    "config.xml"
   ],
+  "deletedFilesIos": [],
   "addedPluginsIos": [
     "org.apache.cordova.dialogs@0.3.0"
   ],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\video.html"
+    "www\\css\\demo-styles.css"
   ],
   "deletedFiles": [],
   "addedPlugins": [],

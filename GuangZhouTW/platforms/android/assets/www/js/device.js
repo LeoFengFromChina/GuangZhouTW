@@ -28,16 +28,17 @@
             var htmlName;
             if (pA.length > 0)
                 htmlName = pA[pA.length - 1];
-            if (htmlName != "index.html")
-            {
-                if ($("#detail-all") != null && $("#detail-all").css("left") == "0px") {
-                    $("#goBack-detail").click();
-                    return;
-                }
+
+            if ($("#detail-all") != null && $("#detail-all").css("left") == "0px") {
+                $("#goBack-detail").click();
+                return;
+            }
+            if (htmlName != "index.html") {
                 if ($("#goBack") != null)
                     $("#goBack").click();
                 return;
             }
+
         }
         //navigator.toast.showlong("再点击一次退出");
         document.removeEventListener("backbutton", onBackKeyDown, false); // 注销返回键  

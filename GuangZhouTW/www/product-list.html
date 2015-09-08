@@ -49,20 +49,14 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems | filter:{typeid:tid}" ng-click="ngClick(item)"
+                <div ng-repeat="item in leftsideitems | filter:{typeid:tid}" style="background-image:url('{{item.img}}')"  ng-click="ngClick(item)"
                     class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <p>
-                        {{item.title}}
-                    </p>
-                    <span class="icon-font  center">{{item.img}}</span>
+                    <div class="icon-text">{{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems  | filter:{typeid:tid}" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list"  >
-                    <p>
-                        {{item.title}}
-                    </p>
-                    <span class="icon-font  center">{{item.img}}</span>
+                <div ng-repeat="item in rightsideitems  | filter:{typeid:tid}" style="background-image:url('{{item.img}}')"  ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list"  >
+                    <div class="icon-text">{{item.title}}</div>
                 </div>
             </div>
         </div>

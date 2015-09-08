@@ -18,7 +18,7 @@
             <div class="pageheader" id="companyid">
                 <div class="firstheader">
                     产品配件<div id="goBack">
-                            <img class="goImg" src="images/arrow-left-c.png" />
+                        <img class="goImg" src="images/arrow-left-c.png" />
                     </div>
                 </div>
                 <div class="clear">
@@ -28,23 +28,13 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" class="big lock-thumb{{item.id}}" data-page="product-list"
-                     >
-                    <span class="itemid" data="{{item.id}}"></span>
-                    <p>
-                        {{item.title}}
-                    </p>
-                    <span class="icon-font  center">{{item.img}}</span>
+                <div ng-repeat="item in leftsideitems" style="background-image:url('{{item.img}}')" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">{{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" class="big lock-thumb{{item.id}}" data-page="product-list"
-                     >
-                    <span class="itemid" data="{{item.id}}"></span>
-                    <p>
-                        {{item.title}}
-                    </p>
-                    <span class="icon-font  center">{{item.img}}</span>
+                <div ng-repeat="item in rightsideitems" style="background-image:url('{{item.img}}')"  ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">{{item.title}}</div>
                 </div>
             </div>
         </div>

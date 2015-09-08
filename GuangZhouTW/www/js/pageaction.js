@@ -1,28 +1,39 @@
 ﻿window.onload = function () {
     showDashBoard();
-    
+
 }
 $('#goBack').click(function () {
+//    fadeDashBoard();
+//    window.history.go(-1);
+//    setTimeout(function () {
+//        window.history.go(-1);
+    //    }, 200);
     fadeDashBoard();
-    setTimeout(function () {
-        window.history.go(-1);
-    }, 200);
+    window.history.go(-1);
+});
+$('#goBack-detail').click(function () {
+    $('.detail-all').addClass('slidePageBackLeft').removeClass('slidePageInFromLeft');
+    showDashBoard();
 });
 
 function showDashBoard() {
-    //    $('#companyid').fadeIn(200);
-    for (var i = 1; i <= 3; i++) {
+//        $('#companyid').fadeIn(200);
+    for (var i = 1; i <= 2; i++) {
         $('.col' + i).each(function () {
             $(this).addClass('fadeInForward-' + i).removeClass('fadeOutback');
         });
     }
+
+//    $('.columns').addClass('fadeInForward').removeClass('fadeOutback');
 }
 
 function fadeDashBoard() {
-    for (var i = 1; i <= 3; i++) {
+    for (var i = 1; i <= 2; i++) {
         $('.col' + i).addClass('fadeOutback').removeClass('fadeInForward-' + i);
     }
-    //    $('#companyid').fadeOut(200);
+//    $('#companyid').fadeOut(200);
+
+//        $('.columns').addClass('fadeOutback').removeClass('fadeInForward');
 }
 
 function navigateToNewUrl(url) {
