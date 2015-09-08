@@ -12,12 +12,12 @@ $('#goBack-detail').click(function () {
 });
 
 function showDashBoard() {
-    //    $('#companyid').fadeIn(200);
     for (var i = 1; i <= 2; i++) {
         $('.col' + i).each(function () {
             $(this).addClass('fadeInForward-' + i).removeClass('fadeOutback');
         });
     }
+    $('.pagerfooter').fadeIn(200);
 }
 function getUrlParam(name) {
     //构造一个含有目标参数的正则表达式对象  
@@ -32,7 +32,7 @@ function fadeDashBoard() {
     for (var i = 1; i <= 2; i++) {
         $('.col' + i).addClass('fadeOutback').removeClass('fadeInForward-' + i);
     }
-    //    $('#companyid').fadeOut(200);
+    $('.pagerfooter').fadeOut(200);
 }
 //显示登录窗体
 //$(".lock-thumb").click(function () {

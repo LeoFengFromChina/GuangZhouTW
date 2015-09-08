@@ -152,21 +152,24 @@
     "www\\fonts\\demo-icomoon.woff",
     "www\\images\\gcal\\db001.jpg",
     "www\\images\\gcal\\db002.jpg",
-    "www\\js\\index.js",
     "www\\images\\ios7-arrow-thin-left.png",
     "www\\css\\detailpage.css",
     "www\\js\\detailpageaction.js",
     "res\\native\\android\\gztw.keystore",
-    "config.xml"
+    "config.xml",
+    "www\\images\\gcal\\qywh001.png",
+    "www\\images\\gcal\\ryzz002.jpg",
+    "www\\images\\gcal\\ryzz001.jpg",
+    "www\\images\\gcal\\ryzz003.jpg"
   ],
-  "deletedFilesIos": [],
+  "deletedFilesIos": [
+    "www\\js\\index.js"
+  ],
   "addedPluginsIos": [
     "org.apache.cordova.dialogs@0.3.0"
   ],
   "deletedPluginsIos": [],
-  "changedFiles": [
-    "www\\css\\demo-styles.css"
-  ],
+  "changedFiles": [],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []
