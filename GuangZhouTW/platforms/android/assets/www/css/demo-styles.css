@@ -194,15 +194,14 @@ img {
     font-size: 1em;
     color: #1E1E1E;
     display: inline;
-    float: right;
-    margin-right: 1%;
+    float: left;
+    margin-left:-1em;
 }
 
 .goBack-detail
 {
     display: inline; 
     float: left; 
-    margin-left: 0px;
     }
 
 .more-detail
@@ -415,7 +414,28 @@ input {
     font-size:16px;
   }
 }
+@media screen and (max-width:480px)
+{
+      
+  #goBack {
+    font-size: 1em;
+    color: #1E1E1E;
+    display: inline;
+    float: right;
+}
 
+.goBack-detail
+{
+    display: inline; 
+    float: left; 
+    }
+
+.more-detail
+{
+    display: inline;
+    float: right;
+}
+}
 @media screen and (min-width: 480px) {   
 
     .productcontent{
@@ -430,6 +450,15 @@ input {
     padding-right:4em;
     font-size:18px;
   } 
+  .goBack-detail
+{
+    margin-left:1em;
+    }
+
+.more-detail
+{
+    margin-right:1em;
+}
 }
 @media screen and (min-width: 900px) {   
 

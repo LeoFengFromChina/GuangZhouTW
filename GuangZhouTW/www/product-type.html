@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta content="width=320px, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-          name="viewport">
+        name="viewport">
     <title>product</title>
     <link rel="stylesheet" href="css/demo-styles.css" />
     <link rel="stylesheet" href="css/detailPage.css" />
@@ -21,22 +21,25 @@
                         <img class="goImg" src="images/arrow-left-c.png" />
                     </div>
                 </div>
-                <div class="clear"></div>
+                <div class="clear">
+                </div>
                 <div class="secondheader">
                     世界著名的施工升降机制造公司之一
                 </div>
             </div>
-            <div class="columns">
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" style="background-image:url('{{item.img}}')" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">{{item.name}}</div>
+                <div ng-repeat="item in leftsideitems" style="background-image: url('{{item.img}}')"
+                    ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">
+                        {{item.name}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" style="background-image:url('{{item.img}}')"  ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">{{item.name}}</div>
+                <div ng-repeat="item in rightsideitems" style="background-image: url('{{item.img}}')"
+                    ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">
+                        {{item.name}}</div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -51,7 +54,6 @@
     <!-- Cordova 引用，它在生成应用程序时添加到其中。 -->
     <script src="cordova.js"></script>
     <script src="js/platformOverrides.js"></script>
-
     <script src="js/device.js"></script>
 </body>
 </html>

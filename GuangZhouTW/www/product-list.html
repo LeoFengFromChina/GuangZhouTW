@@ -15,16 +15,15 @@
     <!--===============================Start Demo====================================================-->
     <div class="demo-wrapper">
         <div class="detail-all" id="detail-all">
-            <div class="company" id="companyid" style="font-family: '微软雅黑';
-                margin-top: 1em;">
+            <div class="company" id="companyid" style="font-family: '微软雅黑'; margin-top: 1em;">
                 <div class="detailtitle">
                     <div id="goBack-detail" class="goBack-detail">
-                        <img class="goImg" src="images/arrow-left-c.png"/>
+                        <img class="goImg" src="images/arrow-left-c.png" />
                     </div>
                     <div style="display: inline; margin-left: atuo;">
                         {{title}}</div>
-                    <div id="more-detail"  class="more-detail">
-                        <img class="goImg" src="images/ios7-more.png"  />
+                    <div id="more-detail" class="more-detail">
+                        <img class="goImg" src="images/ios7-more.png" />
                     </div>
                 </div>
                 <div class="secondheader">
@@ -36,9 +35,9 @@
             </div>
         </div>
         <div class="dashboard clearfix">
-            <div class="pageheader" id="companyid">
+            <div class="pageheader" id="Div1">
                 <div class="firstheader">
-                    <!--{{tname}}-->产品列表<div id="goBack">
+                    产品列表<div id="goBack">
                         <img class="goImg" src="images/arrow-left-c.png" />
                     </div>
                 </div>
@@ -49,14 +48,17 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems | filter:{typeid:tid}" style="background-image:url('{{item.img}}')"  ng-click="ngClick(item)"
-                    class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">{{item.title}}</div>
+                <div ng-repeat="item in leftsideitems | filter:{typeid:tid}" style="background-image: url('{{item.img}}')"
+                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">
+                        {{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems  | filter:{typeid:tid}" style="background-image:url('{{item.img}}')"  ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list"  >
-                    <div class="icon-text">{{item.title}}</div>
+                <div ng-repeat="item in rightsideitems  | filter:{typeid:tid}" style="background-image: url('{{item.img}}')"
+                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                    <div class="icon-text">
+                        {{item.title}}</div>
                 </div>
             </div>
         </div>
