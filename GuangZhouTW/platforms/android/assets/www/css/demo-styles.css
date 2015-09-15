@@ -336,9 +336,6 @@ img {
     background-repeat:no-repeat;
     background-position:center;
 }
-    .lock-thumb:hover, .alarm-thumb:hover {
-        color: #EF3A5B;
-    }
 .icon-text
 {
     font-size:20px;

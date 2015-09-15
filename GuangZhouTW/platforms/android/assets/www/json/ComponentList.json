@@ -1,0 +1,44 @@
+﻿[
+      {
+          "id": 1,
+          "title": "镀锌标准节",
+          "img": "images/chrome.png",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 2,
+          "title": "镀锌附墙",
+          "img": "images/firefox.png",
+          "memo": "变频施工升降机"
+      },
+      {
+          "id": 3,
+          "title": "镀锌后吊笼结构",
+          "img": "images/ie.png",
+          "memo": "工变频两用施工升降机"
+      },
+      {
+          "id": 4,
+          "title": "二传动机构（国产）",
+          "img": "images/opera.png",
+          "memo": "其他电梯"
+      },
+      {
+          "id": 5,
+          "title": "二传动机构（进口）",
+          "img": "images/opera.png",
+          "memo": "其他电梯"
+      },
+      {
+          "id": 6,
+          "title": "三传动机构（国产）",
+          "img": "images/opera.png",
+          "memo": "其他电梯"
+      },
+      {
+          "id": 7,
+          "title": "三传动机构（进口）",
+          "img": "images/opera.png",
+          "memo": "其他电梯"
+      }
+    ]

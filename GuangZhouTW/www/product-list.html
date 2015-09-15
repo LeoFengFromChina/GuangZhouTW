@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/demo-styles.css" />
     <link rel="stylesheet" href="css/detailPage.css" />
     <script src="js/angular-1.0.1.min.js"></script>
-    <script src="js/controller.js"></script>
+    <script src="js/controllers/ProductListController.js"></script>
 </head>
 <body ng-controller="ProductListCtrl">
     <!--===============================Start Demo====================================================-->
@@ -48,15 +48,15 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems | filter:{typeid:tid}" style="background-image: url('{{item.img}}')"
-                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">
+                <div ng-repeat="item in leftsideitems | filter:{typeid:tid}"
+                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list"  style="{{item.mainstyle}}" >
+                    <div class="icon-text" style="{{item.titlestyle}}">
                         {{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems  | filter:{typeid:tid}" style="background-image: url('{{item.img}}')"
-                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
+                <div ng-repeat="item in rightsideitems  | filter:{typeid:tid}" 
+                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list"   style="{{item.mainstyle}}" >
                     <div class="icon-text">
                         {{item.title}}</div>
                 </div>
@@ -71,7 +71,7 @@
     <script src="js/modernizr-1.5.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <!--在这页里要弹出明细页面，与其他不同-->
-    <script src="js/detailPageAction.js"></script>
+    <script src="js/pageaction.js"></script>
     <!-- Cordova 引用，它在生成应用程序时添加到其中。 -->
     <script src="cordova.js"></script>
     <script src="js/platformOverrides.js"></script>

@@ -1,0 +1,73 @@
+﻿[
+      {
+          "id": 1,
+          "title": "代表性建筑",
+          "city": "广州",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 2,
+          "title": "公路大桥项目",
+          "city": "广州",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block;",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 3,
+          "title": "万达广场",
+          "city": "广州",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 4,
+          "title": "中天建筑集团",
+          "city": "广州",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 5,
+          "title": "深圳幸福城",
+          "city": "甚至",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 6,
+          "title": "中铁建设集团",
+          "city": "广州",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 7,
+          "title": "中建四局海珠半岛花园",
+          "city": "广州",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block",
+          "memo": "普通施工升降机"
+      },
+      {
+          "id": 8,
+          "title": "新鸿基御华园",
+          "city": "东莞",
+          "date": "2015-03-11",
+          "mainstyle":"background-image: url('images/chrome.png');",			  
+          "titlestyle": "display:block",
+          "memo": "普通施工升降机"
+      }]

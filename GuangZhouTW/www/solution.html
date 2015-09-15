@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/demo-styles.css" />
     <link rel="stylesheet" href="css/detailPage.css" />
     <script src="js/angular-1.0.1.min.js"></script>
-    <script src="js/controller.js"></script>
+    <script src="js/controllers/SolutionListController.js"></script>
 </head>
 <body ng-controller="SolutionListCtrl">
     <!--===============================Start Demo====================================================-->
@@ -48,13 +48,13 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" style="background-image:url('{{item.img}}')" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">{{item.title}}</div>
+                <div ng-repeat="item in leftsideitems" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="{{item.mainstyle}}" >
+                    <div class="icon-text" style="{{item.titlestyle}}">{{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" style="background-image:url('{{item.img}}')"  ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">{{item.title}}</div>
+                <div ng-repeat="item in rightsideitems" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="{{item.mainstyle}}" >
+                    <div class="icon-text" style="{{item.titlestyle}}">{{item.title}}</div>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
     <script src="js/jquery-1.8.2.min.js"></script>
     <script src="js/modernizr-1.5.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-    <script src="js/detailPageAction.js"></script>    
+    <script src="js/pageaction.js"></script>    
     <!-- Cordova 引用，它在生成应用程序时添加到其中。 -->
     <script src="cordova.js"></script>
     <script src="js/platformOverrides.js"></script>

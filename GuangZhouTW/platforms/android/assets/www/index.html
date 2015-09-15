@@ -9,7 +9,7 @@
     <title>广州特威</title>
     <link rel="stylesheet" href="css/demo-styles.css" />
     <link rel="stylesheet" href="css/detailPage.css" />
-    <script src="js/controller.js"></script>
+    <script src="js/controllers/IndexController.js"></script>
 </head>
 <body ng-controller="IndexCtrl">
     <!--===============================Start Demo====================================================-->
@@ -46,18 +46,16 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" style="background-image: url('{{item.img}}');
-                    background-color: {{item.color}}; height: {{item.height}};" ng-click="ngClick(item)"
+                <div ng-repeat="item in leftsideitems" style="{{item.mainstyle}}" ng-click="ngClick(item)"
                     class="big lock-thumb" data-page="{{item.url}}">
-                    <div class="index-icon-text" style="display: {{item.displaytitle}}">
+                    <div class="index-icon-text" style="{{item.titlestyle}}">
                         {{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" style="background-image: url('{{item.img}}');
-                    background-color: {{item.color}}; height: {{item.height}};" ng-click="ngClick(item)"
+                <div ng-repeat="item in rightsideitems" style="{{item.mainstyle}}" ng-click="ngClick(item)"
                     class="big lock-thumb" data-page="{{item.url}}">
-                    <div class="index-icon-text" style="display: {{item.displaytitle}}">
+                    <div class="index-icon-text" style="{{item.titlestyle}}">
                         {{item.title}}</div>
                 </div>
             </div>
