@@ -46,11 +46,11 @@
 
 @keyframes fadeInForward {
     0% {
-        transform: translateZ(-5em) scale(0);
+        transform: translateZ(-5em);
         opacity: 0;
     }
     100% {
-        transform: translateZ(0em) scale(1);
+        transform: translateZ(0em);
         opacity: 1;
     }
 }

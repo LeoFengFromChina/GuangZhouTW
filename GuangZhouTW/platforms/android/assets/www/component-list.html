@@ -14,6 +14,26 @@
 <body ng-controller="ComponentListCtrl">
     <!--===============================Start Demo====================================================-->
     <div class="demo-wrapper">
+            <div class="detail-all" id="detail-all">
+            <div class="company" id="Div1" style="font-family: '微软雅黑'; margin-top: 1em;">
+                <div class="detailtitle">
+                    <div id="goBack-detail" class="goBack-detail">
+                        <img class="goImg" src="images/arrow-left-c.png" />
+                    </div>
+                    <div style="display: inline; margin-left: atuo;">
+                        {{title}}</div>
+                    <div id="more-detail" class="more-detail">
+                        <img class="goImg" src="images/ios7-more.png" />
+                    </div>
+                </div>
+                <div class="secondheader">
+                    {{secondtitle}}
+                </div>
+            </div>
+            <div id="productcontent" class="productcontent">
+                <!--{{content}}-->
+            </div>
+        </div>
         <div class="dashboard clearfix">
             <div class="pageheader" id="companyid">
                 <div class="firstheader">
@@ -28,13 +48,17 @@
                 </div>
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" style="background-image:url('{{item.img}}')" ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">{{item.title}}</div>
+                <div ng-repeat="item in leftsideitems"
+                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list"  style="{{item.mainstyle}}" >
+                    <div class="icon-text" style="{{item.titlestyle}}">
+                        {{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" style="background-image:url('{{item.img}}')"  ng-click="ngClick('product-list',item)" class="big lock-thumb{{item.id}}" data-page="product-list">
-                    <div class="icon-text">{{item.title}}</div>
+                <div ng-repeat="item in rightsideitems" 
+                    ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list"   style="{{item.mainstyle}}" >
+                    <div class="icon-text">
+                        {{item.title}}</div>
                 </div>
             </div>
         </div>

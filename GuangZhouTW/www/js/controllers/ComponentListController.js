@@ -8,7 +8,7 @@ function ComponentListCtrl($scope, $http) {
     var alldata = new Array();
     //http请求
     $http({
-        url: 'http://192.168.1.105/datainterface/json/ComponentList.json',
+        url: 'json/ComponentList.json',
         method: 'GET'
     }).success(function (data, header, config, status) {
         //响应成功
@@ -34,4 +34,33 @@ function ComponentListCtrl($scope, $http) {
         //处理响应失败
         alert('error');
     });
+
+    //按钮事件
+    $scope.ngClick = function (item) {
+        //根据Item的产品id获取产品的详细内容。
+
+        $scope.title = item.title;
+        var _url = 'json/components/component' + item.id + '.json';
+        //http请求
+        $http({
+            url: _url,
+            method: 'GET'
+        }).success(function (data, header, config, status) {
+            //响应成功
+            $scope.content = data[0].content;
+            $scope.secondtitle = data[0].date;
+
+            //显示
+            fadeDashBoard();
+            $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
+            //当前窗口的高度，减去(标题的高+margin-top)
+            $("#productcontent").height(window.innerHeight - 100 + "px");
+            //用直接设置html的方法显示图片
+            $("#productcontent").html($scope.content);
+
+        }).error(function (data, header, config, status) {
+            //处理响应失败
+            alert('获取数据失败.');
+        });
+    }
 }

@@ -6,8 +6,10 @@ function AboutCtrl($scope, $http) {
     var alldata = new Array();
     //http请求
     $http({
-        url: 'http://192.168.1.105/datainterface/json/about.json',
-        method: 'GET'
+        //url: 'http://192.168.1.105/datainterface/json/about.json',
+        url: 'json/About.json',
+        method: 'GET',
+        params: { 'memo': 'test' }
     }).success(function (data, header, config, status) {
         //响应成功
         alldata = data;
@@ -37,7 +39,7 @@ function AboutCtrl($scope, $http) {
     $scope.ngClick = function (item) {
         var title = item.title;
         var secondtitle = GetDate();
-        var _url = 'http://192.168.1.105/datainterface/json/abouts/about' + item.id + '.json';
+        var _url = 'json/abouts/about' + item.id + '.json';
         $scope.title = item.title;
         //http请求
         $http({

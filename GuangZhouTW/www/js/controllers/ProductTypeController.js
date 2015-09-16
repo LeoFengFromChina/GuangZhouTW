@@ -8,7 +8,7 @@ function ProductTypeCtrl($scope, $http) {
     var alldata = new Array();
     //http请求
     $http({
-        url: 'http://192.168.1.105/datainterface/json/ProductType.json',
+        url: 'json/ProductType.json',
         method: 'GET'
     }).success(function (data, header, config, status) {
         //响应成功
