@@ -3,7 +3,8 @@
           "id": 1,
           "pagetype": "html",
           "title": "产品展示",
-          "mainstyle":"background-image: url('images/chrome.png');background-color: #FF563A; height: 230px;",			  
+          "icon":"icon-product",
+          "mainstyle":"background-color: #FF563A; height: 230px;",			  
           "titlestyle": "display:block",
           "url": "product-type",
           "memo": "普通施工升降机"
@@ -11,7 +12,8 @@
           "id": 2,
           "pagetype": "html",
           "title": "产品配件",
-          "mainstyle":"background-image: url('images/firefox.png');background-color: #92D050; height: 120px;",			  
+          "icon":"",
+          "mainstyle":"background-color: #92D050; height: 120px;",			  
           "titlestyle": "display:block",
           "url": "component-list",
           "memo": "普通施工升降机"
@@ -19,7 +21,8 @@
           "id": 3,
           "pagetype": "html",
           "title": "工程案例",
-          "mainstyle":"background-image: url('images/safari.png');background-color: #00B0F0; height: 230px;",			  
+          "icon":"icon-project",
+          "mainstyle":"background-color: #00B0F0; height: 230px;",			  
           "titlestyle": "display:block",
           "url": "solution",
           "memo": "普通施工升降机"
@@ -27,7 +30,9 @@
           "id": 4,
           "pagetype": "html",
           "title": "关于特威",
-          "mainstyle":"background-image: url('images/ie.png');background-color: #FFC000; height: 200px;",			  
+          "icon":"icon-tw",
+          "direction":"horizontal",
+          "mainstyle":"background-color: #FFC000; height: 200px;",			  
           "titlestyle": "display:block;",
           "url": "about",
           "memo": "普通施工升降机"
@@ -35,7 +40,8 @@
           "id": 5,
           "pagetype": "div",
           "title": "视频",
-          "mainstyle":"background-image: url('images/firefox.png');background-color: #FA3636; height: 60px;",			  
+          "icon":"icon-video",
+          "mainstyle":"background-color: #FA3636; height: 60px;",			  
           "titlestyle": "display:block",
           "url": "video",
           "memo": "普通施工升降机"
@@ -43,7 +49,8 @@
           "id": 6,
           "pagetype": "html",
           "title": "特威服务",
-          "mainstyle":"background-image: url('https://www.baidu.com/img/bdlogo.png');background-color: #FF218B; height: 200px;",			  
+          "icon":"icon-xin",
+          "mainstyle":"background-color: #FF218B; height: 200px;",			  
           "titlestyle": "display:block",
           "url": "service",
           "memo": "普通施工升降机"
