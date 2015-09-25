@@ -15,9 +15,11 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-arrowright:before { content: "\e620"; }
+.icon-arrowback:before { content: "\e61f"; }
 .icon-product:before { content: "\e618"; }
+.icon-project:before { content: "\e616"; }
 .icon-grid:before { content: "\e615"; }
 .icon-video:before { content: "\e611"; }
 .icon-xin:before { content: "\e610"; }
 .icon-tw:before { content: "\e60c"; }
-.icon-project:before { content: "\e616"; }
