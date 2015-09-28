@@ -501,9 +501,13 @@ input {
     -moz-align-items: center;
     align-items: center;
 }
+
 .horizontal .icon{
+    font-size: 44px;
+}
+.horizontal .icon,.horizontal .index-icon-text{
     float: left;
-    /*position: absolute;*/
+    display: inline;
 
 }
 .icon{

@@ -57,8 +57,8 @@
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" style="{{item.mainstyle}}" ng-click="ngClick(item)" class="big lock-thumb center" data-page="{{item.url}}">
-                    <div class="horizontal-icon">
+                <div ng-repeat="item in rightsideitems" style="{{item.mainstyle}}" ng-click="ngClick(item)" class="big lock-thumb center {{item.direction}}" data-page="{{item.url}}">
+                    <div class="wrap-icon">
                         <i class="icon iconfont {{item.icon}}"></i>
                         <div class="index-icon-text" style="{{item.titlestyle}}">
                             {{item.title}}</div>
