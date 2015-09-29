@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Mon Sep 28 23:00:35 2015
+Created by FontForge 20120731 at Tue Sep 29 17:38:15 2015
  By Ads
 </metadata>
 <defs>
@@ -19,7 +19,7 @@ Created by FontForge 20120731 at Mon Sep 28 23:00:35 2015
     bbox="0 -212 1028 812"
     underline-thickness="50"
     underline-position="-100"
-    unicode-range="U+0078-E629"
+    unicode-range="U+0078-E62A"
   />
 <missing-glyph horiz-adv-x="374" 
 d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" />
@@ -43,8 +43,6 @@ t35 -21.5v-2l1 1l1 -1v2q14 8 35 21.5t66.5 46.5t89 69t95 87t92 103t73 114.5t45.5 
 q12 -10 23.5 -20.5t19.5 -19.5t12 -14t6 -9l33 -44l32 44q8 11 20 24t38.5 36.5t63 38.5t73.5 15q93 0 187 -99q70 -113 39 -241q-40 -171 -247 -357z" />
     <glyph glyph-name="uniE611" unicode="&#xe611;" 
 d="M190 812v-1024l648 512zM240 709l517 -409l-517 -409v818z" />
-    <glyph glyph-name="uniE615" unicode="&#xe615;" 
-d="M62 750h260v-260h-260v260zM62 430h260v-260h-260v260zM62 108h260v-260h-260v260zM382 750h260v-260h-260v260zM382 430h260v-260h-260v260zM382 108h260v-260h-260v260zM706 750h260v-260h-260v260zM706 430h260v-260h-260v260zM706 108h260v-260h-260v260z" />
     <glyph glyph-name="uniE616" unicode="&#xe616;" 
 d="M340 650h-340v-694h694v344h-354v350zM660 266v-276h-628v628h276v-352h352zM974 173v67h-65l-49 48l-48 -48h-68v-67l-48 -48l48 -48v-67h68l48 -48l49 48h65v67l48 48zM954 86v-56h-54l-40 -39l-39 39h-57v56l-39 39l39 39v56h57l39 39l40 -39h54v-56l39 -39z" />
     <glyph glyph-name="uniE618" unicode="&#xe618;" 
@@ -62,5 +60,7 @@ l12 131h176l12 -130l10 -3q4 -2 8 -3t8 -3l8 -2l8 -4l10 -4l94 95l135 -114l-75 -107
 d="M1 361h775l-284 284l95 95l441 -441l-4 -4l4 -3l-437 -437l-95 95l276 277h-771v134z" />
     <glyph glyph-name="uniE629" unicode="&#xe629;" horiz-adv-x="1028" 
 d="M1028 361h-774l283 284l-95 95l-441 -441l4 -4l-4 -3l437 -437l95 95l-276 277h771v134z" />
+    <glyph glyph-name="uniE62A" unicode="&#xe62a;" 
+d="M0 812h192v-192h-192v192zM832 812h192v-192h-192v192zM416 812h192v-192h-192v192zM416 396h192v-192h-192v192zM832 396h192v-192h-192v192zM0 396h192v-192h-192v192zM416 -20h192v-192h-192v192zM832 -20h192v-192h-192v192zM0 -20h192v-192h-192v192z" />
   </font>
 </defs></svg>
