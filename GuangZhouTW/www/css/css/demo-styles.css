@@ -177,7 +177,8 @@ h3 {
     color: #8A8A8A;
     text-align: center;
     font-family: 'Microsoft YaHei';
-    display: none;
+    display: block;
+    float:left;
 }
 
 .goImg {
