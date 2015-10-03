@@ -8,6 +8,7 @@
     left: -150%;
     font-weight: 300;
     font-family:'Microsoft YaHei';
+    z-index:9999;
    
 }
 .company
