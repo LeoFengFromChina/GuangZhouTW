@@ -31,7 +31,6 @@ function showDashBoard() {
         //    $('.col' + i).css("opacity", "1");
         //}, 500);
     }
-    $('.pagerfooter').fadeIn(200);
 }
 
 function fadeDashBoard() {

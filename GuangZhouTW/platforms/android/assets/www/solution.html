@@ -6,6 +6,7 @@
     <meta content="width=320px, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         name="viewport">
     <title>解决方案</title>
+    <link rel="stylesheet" href="fonts/iconfont.css" />
     <link rel="stylesheet" href="css/demo-styles.css" />
     <link rel="stylesheet" href="css/detailPage.css" />
     <script src="js/angular-1.0.1.min.js"></script>
@@ -18,8 +19,8 @@
             <div class="company" id="companyid" style="font-family: '微软雅黑';
                 margin-top: 1em;">
                 <div class="detailtitle">
-                    <div id="goBack-detail" class="goBack-detail">
-                        <img class="goImg" src="images/arrow-left-c.png"/>
+                    <div id="goBack-detail" class="goBack-detail  icon iconfont icon-arrowleft">
+                        <!-- <img class="goImg" src="images/arrow-left-c.png"/> -->
                     </div>
                     <div style="display: inline; margin-left: atuo;">
                         {{title}}</div>
@@ -38,14 +39,16 @@
         <div class="dashboard clearfix">
             <div class="pageheader" id="companyid">
                 <div class="firstheader">
-                    工程案例<div id="goBack">
-                            <img class="goImg" src="images/arrow-left-c.png" />
+                    工程案例<span class="sub_title">施工升降机制造商</span><div id="goBack" class="icon iconfont icon-arrowleft">
+                            <!-- <img class="goImg" src="images/arrow-left-c.png" /> -->
                     </div>
+                    <div id="easy_btn" class=" icon iconfont icon-grid"></div>
                 </div>
+              
                 <div class="clear"></div>
-                <div class="secondheader">
+                <!-- <div class="secondheader">
                     世界著名的施工升降机制造公司之一
-                </div>
+                </div> -->
             </div>
             <div class="col1 clearfix">
                 <div ng-repeat="item in leftsideitems" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="{{item.mainstyle}}" >

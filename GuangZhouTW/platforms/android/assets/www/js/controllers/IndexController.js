@@ -5,7 +5,7 @@
 function IndexCtrl($scope, $http) {
     var alldata = new Array();
     $http({
-        url: 'http://192.168.1.105/datainterface/json/Index.json?timespan='+new Date(),
+        url: 'json/index.json?timespan='+new Date(),
         method: 'GET'
     }).success(function (data, header, config, status) {
         //响应成功
@@ -69,7 +69,7 @@ function IndexCtrl($scope, $http) {
 
             $scope.title = item.title;
             $http({
-                url: 'http://192.168.1.105/datainterface/json/Video.json?timespan=' + new Date(),
+                url: 'json/Video.json?timespan=' + new Date(),
                 method: 'GET'
             }).success(function (data, header, config, status) {
                 //响应成功

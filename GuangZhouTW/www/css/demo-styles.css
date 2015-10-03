@@ -48,11 +48,11 @@
 
 @keyframes fadeInForward {
     0% {
-        transform: translateZ(-5em);
+        transform: translateZ(-5em) translate(150px,0px);
         opacity: 0;
     }
     100% {
-        transform: translateZ(0em);
+        transform: translateZ(0em) translate(0px,0px);
         opacity: 1;
     }
 }
