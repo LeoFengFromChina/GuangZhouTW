@@ -1,17 +1,19 @@
 ﻿<!DOCTYPE html>
 <html ng-app>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta content="width=320px, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-          name="viewport">
+    <meta content="width=320px, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <title>关于特威</title>
     <link rel="stylesheet" href="fonts/iconfont.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/demo-styles.css" />
     <link rel="stylesheet" href="css/detailPage.css" />
     <script src="js/angular-1.0.1.min.js"></script>
     <script src="js/controllers/AboutController.js"></script>
 </head>
+
 <body ng-controller="AboutCtrl">
     <!--===============================Start Demo====================================================-->
     <div class="demo-wrapper">
@@ -40,23 +42,40 @@
         <div class="dashboard clearfix">
             <div class="pageheader" id="companyid">
                 <div class="firstheader">
-                    关于特威<span class="sub_title">施工升降机制造商</span><div id="goBack" class=" icon iconfont icon-arrowleft">
+                    关于特威<span class="sub_title">施工升降机制造商</span>
+                    <div id="goBack" class=" icon iconfont icon-arrowleft">
                         <!-- <img class="goImg" src="images/arrow-left-c.png" /> -->
                     </div>
-                     <div id="easy_btn" class=" icon iconfont icon-grid"></div>
+                    <div id="easy_btn" class=" icon iconfont icon-grid" ng-click="showEasyList()">
+                        <div class=" easyList none ui-dropmenu animated ui-aligncenter {{isShow}}" ng-class="{true: 'bounceInDown ', false: 'bounceOutUp '}[isShowEasyList]"><span class="ui-dropmenu-arrow" style="left: auto; right: 20px;"></span>
+                            <ul class="ui-dropmenu-items">
+                                <li><a href="index.html?showVideo=1">首页</a></li>
+                                <li><a href="product-type.html">产品展示</a>
+                                    <!--</li>放在下行结尾可以去除display:inline-block带来的间隔-->
+                                </li>
+                                <li><a href="solution.html">工程案例</a>
+                                </li>
+                                <li><a href="component-list.html">产品配件</a>
+                                </li>
+                                
+                                <li><a href="about.html">关于特威</a></li>
+                                <li><a href="service.html">特威服务</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="clear"></div>
-               <!--  <div class="secondheader">
+                <!--  <div class="secondheader">
                     世界著名的施工升降机制造公司之一
                 </div> -->
             </div>
             <div class="col1 clearfix">
-                <div ng-repeat="item in leftsideitems" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="{{item.mainstyle}}" >
+                <div ng-repeat="item in leftsideitems" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="{{item.mainstyle}}">
                     <div class="icon-text" style="{{item.titlestyle}}">{{item.title}}</div>
                 </div>
             </div>
             <div class="col2 clearfix">
-                <div ng-repeat="item in rightsideitems" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="{{item.mainstyle}}" >
+                <div ng-repeat="item in rightsideitems" ng-click="ngClick(item)" class="big lock-thumb{{item.id}}" data-page="product-list" style="{{item.mainstyle}}">
                     <div class="icon-text" style="{{item.titlestyle}}">{{item.title}}</div>
                 </div>
             </div>
@@ -69,11 +88,11 @@
     <script src="js/jquery-1.8.2.min.js"></script>
     <script src="js/modernizr-1.5.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-
     <script src="js/pageaction.js"></script>
     <!-- Cordova 引用，它在生成应用程序时添加到其中。 -->
     <script src="cordova.js"></script>
     <script src="js/platformOverrides.js"></script>
     <script src="js/device.js"></script>
 </body>
+
 </html>

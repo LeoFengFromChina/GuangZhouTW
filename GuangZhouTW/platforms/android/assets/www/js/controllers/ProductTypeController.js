@@ -5,7 +5,7 @@
 var currMinute;
 var myDate;
 var urlParam;
-function ProductTypeCtrl($scope, $http) {
+function ProductTypeCtrl($scope, $http,$timeout) {
     myDate = new Date();
     if (currMinute == null || myDate.getMinutes() - currMinute > 1) {
         currMinute = myDate.getMinutes();
@@ -71,5 +71,16 @@ function ProductTypeCtrl($scope, $http) {
     //导航进入具体类型产品的列表
     $scope.ngClick = function (url, item) {
         navigateToNewUrl(url + ".html" + "?typeid=" + item.id + "&typename=" + item.title);
+    }
+   
+    $scope.isShowEasyList=false;
+    $scope.showEasyList = function(){
+        if($scope.isShowEasyList){
+            $scope.isShowEasyList=false;
+             // $scope.isShow="hide";
+        }else{
+            $scope.isShowEasyList=true;
+             $scope.isShow="show";
+        }
     }
 }

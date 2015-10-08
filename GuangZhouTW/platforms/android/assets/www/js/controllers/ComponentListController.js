@@ -96,4 +96,15 @@ function ComponentListCtrl($scope, $http) {
             alert('获取数据失败.');
         });
     }
+
+    $scope.isShowEasyList=false;
+    $scope.showEasyList = function(){
+        if($scope.isShowEasyList){
+            $scope.isShowEasyList=false;
+             // $scope.isShow="hide";
+        }else{
+            $scope.isShowEasyList=true;
+             $scope.isShow="show";
+        }
+    }
 }

@@ -12,6 +12,7 @@
     "www\\json\\components\\component7.json",
     "bower.json",
     "plugins\\org.apache.cordova.dialogs\\plugin.xml",
+    "www\\js\\controllers\\ServiceController.js",
     "www\\fonts\\demo-icomoon.eot",
     "www\\json\\solutions\\solution5.json",
     "res\\icons\\android\\icon-72-hdpi.png",
@@ -33,7 +34,6 @@
     "www\\images\\1.png",
     "www\\json\\solutions\\solution7.json",
     "www\\js\\platformOverrides.js",
-    "www\\css\\css\\detailPage.css",
     "www\\json\\index.json",
     "www\\json\\About.json",
     "res\\icons\\windows\\StoreLogo.scale-100.png",
@@ -161,6 +161,7 @@
     "plugins\\org.apache.cordova.dialogs\\www\\notification.js",
     "www\\images\\gcal\\szxfc002.jpg",
     "plugins\\org.apache.cordova.dialogs\\doc\\index.md",
+    "www\\css\\animate.css",
     "www\\about.html",
     "res\\screens\\android\\screen-ldpi-portrait.png",
     "www\\fonts\\iconfont.css",
@@ -199,7 +200,6 @@
     "res\\icons\\wp8\\ApplicationIcon.png",
     "www\\web.config",
     "www\\js\\prefixfree.min.js",
-    "www\\css\\css\\demo-styles.css",
     "www\\images\\opera.png",
     "res\\icons\\ios\\icon-40-2x.png",
     "plugins\\org.apache.cordova.dialogs\\src\\blackberry10\\index.js",
@@ -234,15 +234,20 @@
     "res\\icons\\windows\\Square44x44Logo.scale-240.png",
     "res\\screens\\android\\screen-mdpi-portrait.png",
     "www\\fonts\\demo-icomoon.woff",
-    "www\\js\\controllers\\indexcontroller.js",
-    "www\\css\\detailpage.css"
+    "www\\images\\about\\index_17.png",
+    "www\\images\\about\\index_19.png",
+    "www\\images\\about\\index_21.png",
+    "www\\images\\about\\index_26.png",
+    "www\\images\\about\\index_29.png",
+    "www\\images\\about\\index_31.png"
   ],
   "deletedFilesIos": [],
-  "addedPluginsIos": [],
+  "addedPluginsIos": [
+    "org.apache.cordova.dialogs@0.3.0"
+  ],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "www\\css\\demo-styles.css",
-    "www\\css\\detailpage.css"
+    "www\\product-list.html"
   ],
   "deletedFiles": [],
   "addedPlugins": [],

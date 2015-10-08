@@ -7,6 +7,7 @@
         name="viewport">
     <title>产品配件</title>
     <link rel="stylesheet" href="fonts/iconfont.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/demo-styles.css" />
     <link rel="stylesheet" href="css/detailPage.css" />
     <script src="js/angular-1.0.1.min.js"></script>
@@ -42,7 +43,22 @@
                         <!-- <img class="goImg" src="images/arrow-left-c.png" /> -->
                        
                     </div>
-                     <div id="easy_btn" class=" icon iconfont icon-grid"></div>
+                    <div id="easy_btn" class=" icon iconfont icon-grid" ng-click="showEasyList()">
+                        <div class=" easyList none ui-dropmenu animated ui-aligncenter {{isShow}}" ng-class="{true: 'bounceInDown ', false: 'bounceOutUp '}[isShowEasyList]"><span class="ui-dropmenu-arrow" style="left: auto; right: 20px;"></span>
+                            <ul class="ui-dropmenu-items">
+                                <li><a href="index.html?showVideo=1">首页</a></li>
+                                <li><a href="product-type.html">产品展示</a>
+                                    <!--</li>放在下行结尾可以去除display:inline-block带来的间隔-->
+                                </li>
+                                <li><a href="solution.html">工程案例</a>
+                                </li>
+                                <li><a href="component-list.html">产品配件</a>
+                                </li>
+                                <li><a href="about.html">关于特威</a></li>
+                                <li><a href="service.html">特威服务</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="clear">
                 </div>
