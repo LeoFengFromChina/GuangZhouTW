@@ -1,4 +1,17 @@
 ﻿window.onload = function () {
+    var myDate = new Date();
+
+    //测试版本，控制版本的使用期限。正式版本需要删除此段语句。add by frde 2015-10-09
+    var alertText = "该版本已过期，请获取最新版本。";
+    if (myDate.getFullYear() > 2015) {
+        alert(alertText);
+    }
+    else {
+        if (myDate.getMonth() != 9) {
+
+            alert(alertText);
+        }
+    }
     showDashBoard();
 
 }
@@ -18,7 +31,7 @@ $('#goBack-detail').click(function () {
 
 $('#more-detail').click(function () {
 
-    alert('more detail');
+    //alert('more detail');
 });
 
 function showDashBoard() {

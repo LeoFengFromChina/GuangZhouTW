@@ -3,49 +3,49 @@
           "id": 1,
           "title": "镀锌标准节",
           "mainstyle": "background-image: url('images/component/jie.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
-          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       },
       {
           "id": 2,
           "title": "镀锌附墙",
           "mainstyle": "background-image: url('images/component/fq.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
-          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "memo": "变频施工升降机"
       },
       {
           "id": 3,
           "title": "镀锌后吊笼结构",
           "mainstyle": "background-image: url('images/component/dl.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
-          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "memo": "工变频两用施工升降机"
       },
       {
           "id": 4,
           "title": "二传动机构（国产）",
           "mainstyle": "background-image: url('images/component/ec1.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
-          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "memo": "其他电梯"
       },
       {
           "id": 5,
           "title": "二传动机构（进口）",
           "mainstyle": "background-image: url('images/component/ec2.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
-          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "memo": "其他电梯"
       },
       {
           "id": 6,
           "title": "三传动机构（国产）",
           "mainstyle": "background-image: url('images/component/sc1.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
-          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "memo": "其他电梯"
       },
       {
           "id": 7,
           "title": "三传动机构（进口）",
           "mainstyle": "background-image: url('images/component/sc2.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
-          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "memo": "其他电梯"
       }
     ]

@@ -130,7 +130,7 @@ html {
 }
 
 body {
-    background: url("../images/1.png");
+    /*background: url("../images/1.png");*/
     /*background: #333333;ºÚÉ«Æ¤·ô*/
     /*color: #ffffff;*/
     background-size: cover;
@@ -182,6 +182,8 @@ h3 {
     margin: 0 auto;
     height: 44px;
     margin-top: 10px;
+    border-bottom-style: groove;
+    border-width: 1px;
 }
 
     .firstheader .sub_title {
@@ -680,6 +682,11 @@ input {
     #goBack {
         margin-left: -1.5em;
     }
+
+    
+    .icon-text {
+        padding-top: 126px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -708,6 +715,10 @@ input {
 
     #goBack {
         margin-left: -1.5em;
+    }
+    
+    .icon-text {
+        padding-top: 136px;
     }
 }
 
