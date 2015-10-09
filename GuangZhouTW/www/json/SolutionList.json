@@ -4,8 +4,8 @@
           "title": "代表性建筑",
           "city": "广州",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block",
+          "mainstyle": "background-image: url('images/solution/build.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       },
       {
@@ -13,8 +13,8 @@
           "title": "公路大桥项目",
           "city": "广州",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block;",
+          "mainstyle": "background-image: url('images/solution/bridge.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       },
       {
@@ -22,8 +22,8 @@
           "title": "万达广场",
           "city": "广州",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block",
+          "mainstyle": "background-image: url('images/solution/wd.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",		  
           "memo": "普通施工升降机"
       },
       {
@@ -31,8 +31,8 @@
           "title": "中天建筑集团",
           "city": "广州",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block",
+          "mainstyle": "background-image: url('images/solution/zt.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       },
       {
@@ -40,8 +40,8 @@
           "title": "深圳幸福城",
           "city": "甚至",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block",
+          "mainstyle": "background-image: url('images/solution/xf.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       },
       {
@@ -49,8 +49,8 @@
           "title": "中铁建设集团",
           "city": "广州",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block",
+          "mainstyle": "background-image: url('images/solution/ztie.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       },
       {
@@ -58,8 +58,8 @@
           "title": "中建四局海珠半岛花园",
           "city": "广州",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block",
+          "mainstyle": "background-image: url('images/solution/zj.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       },
       {
@@ -67,7 +67,7 @@
           "title": "新鸿基御华园",
           "city": "东莞",
           "date": "2015-03-11",
-          "mainstyle":"background-image: url('images/chrome.png');",			  
-          "titlestyle": "display:block",
+          "mainstyle": "background-image: url('images/solution/xh.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #1C86EE;font-family: 'Microsoft YaHei';",
           "memo": "普通施工升降机"
       }]
