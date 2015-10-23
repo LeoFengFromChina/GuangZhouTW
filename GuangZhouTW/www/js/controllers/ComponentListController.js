@@ -6,6 +6,11 @@ var currMinute;
 var myDate;
 var urlParam;
 function ComponentListCtrl($scope, $http) {
+    //判断用户是否登录
+    var usre = LocCache.load('user') || null;
+    if(!usre){
+        window.location = '/login.html';
+    }
     myDate = new Date();
     if (currMinute == null || myDate.getMinutes() - currMinute > 1) {
         currMinute = myDate.getMinutes();

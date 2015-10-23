@@ -1,6 +1,5 @@
-﻿<html>
-<!DOCTYPE html>
-<html lang="en" class="no-js">
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app>
 
 <head>
     <meta charset="utf-8">
@@ -15,29 +14,24 @@
     <!--[if lt IE 9]>
             <script src="assets/js/html5.js"></script>
         <![endif]-->
+    <script src="js/controllers/LoginController.js"></script>
 </head>
 
-<body>
+<body ng-controller="LoginCtrl">
     <div class="page-container">
         <h1 class="title">广州市特威工程机械有限公司</h1>
         <div class="sub_title">GUZHANG TE WEI ENG.MACHINERY CO.LTD</div>
-        <form action="" method="post">
-            <input type="text" name="username" class="username" placeholder="请输入您的用户名！">
-            <input type="password" name="password" class="password" placeholder="请输入您的用户密码！">
-            <button type="submit" class="submit_button">登录</button>
+        <form name='loginForm'>
+            <input type="text" name="username" class="username" placeholder="请输入您的用户名！" ng-model='loginUser.user' required>
+            <input type="password" name="password" class="password" placeholder="请输入您的用户密码！" ng-model='loginUser.password' required>
+            <button type="submit" class="submit_button" ng-click="login()" ng-disabled=loginForm.$invalid>登录</button>
             <div class="error"><span>+</span></div>
         </form>
-        <!--  <div class="connect">
-                <p>快捷</p>
-                <p>
-                    <a class="facebook" href=""></a>
-                    <a class="twitter" href=""></a>
-                </p>
-            </div> -->
     </div>
     <!-- Javascript -->
     <script src="js/jquery-1.8.2.min.js"></script>
-
+    <script src="js/angular-1.0.1.min.js"></script>
+    <script src="js/pageaction.js"></script>
     <script>
     // jQuery(document).ready(function() {
 

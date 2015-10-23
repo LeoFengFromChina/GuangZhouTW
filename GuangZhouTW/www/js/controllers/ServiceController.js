@@ -3,7 +3,11 @@
 *********************************************************/
 
 function ServiceCtrl($scope, $http) {
-   
+   //判断用户是否登录
+    var usre = LocCache.load('user') || null;
+    if(!usre){
+        window.location = '/login.html';
+    }
     $scope.isShowEasyList=false;
     $scope.showEasyList = function(){
         if($scope.isShowEasyList){

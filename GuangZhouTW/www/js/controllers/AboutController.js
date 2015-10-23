@@ -5,6 +5,11 @@ var currMinute;
 var myDate;
 var urlParam;
 function AboutCtrl($scope, $http) {
+    //判断用户是否登录
+    var usre = LocCache.load('user') || null;
+    if(!usre){
+        window.location = '/login.html';
+    }
     //这里需要请求动态数据
     myDate = new Date();
     if (currMinute == null || myDate.getMinutes() - currMinute > 1) {

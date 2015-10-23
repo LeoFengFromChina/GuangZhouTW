@@ -1,13 +1,17 @@
-﻿
-/*********************************************************
+﻿/*********************************************************
 ------------------首页Controller--------------------
 *********************************************************/
 function IndexCtrl($scope, $http) {
+    //判断用户是否登录
+    var usre = LocCache.load('user') || null;
+    if (!usre) {
+        window.location = '/login.html';
+    }
     var alldata = new Array();
     $http({
-        url: 'json/index.json?timespan='+new Date(),
+        url: 'json/index.json?timespan=' + new Date(),
         method: 'GET'
-    }).success(function (data, header, config, status) {
+    }).success(function(data, header, config, status) {
         //响应成功
         alldata = data;
         if (alldata != null && alldata.length > 0) {
@@ -27,12 +31,12 @@ function IndexCtrl($scope, $http) {
             $scope.leftsideitems = left;
             $scope.rightsideitems = right;
         }
-    }).error(function (data, header, config, status) {
+    }).error(function(data, header, config, status) {
         //处理响应失败,请求本地
         $http({
             url: 'json/Index.json',
             method: 'GET'
-        }).success(function (data, header, config, status) {
+        }).success(function(data, header, config, status) {
             //响应成功
             alldata = data;
             if (alldata != null && alldata.length > 0) {
@@ -52,16 +56,16 @@ function IndexCtrl($scope, $http) {
                 $scope.leftsideitems = left;
                 $scope.rightsideitems = right;
             }
-        }).error(function (data, header, config, status) {
+        }).error(function(data, header, config, status) {
             //处理响应失败,请求本地
             alert('No data reply');
 
         });
-        
+
     });
 
     //按钮事件
-    $scope.ngClick = function (item) {
+    $scope.ngClick = function(item) {
         //根据Item的产品id获取产品的详细内容。
         if (item.pagetype == "html")
             navigateToNewUrl(item.url + ".html");
@@ -71,7 +75,7 @@ function IndexCtrl($scope, $http) {
             $http({
                 url: 'json/Video.json?timespan=' + new Date(),
                 method: 'GET'
-            }).success(function (data, header, config, status) {
+            }).success(function(data, header, config, status) {
                 //响应成功
                 $scope.secondtitle = data[0].date;
                 $scope.content = data[0].content;
@@ -81,12 +85,12 @@ function IndexCtrl($scope, $http) {
                 $("#productcontent").height(window.innerHeight - 100 + "px");
                 //用直接设置html的方法显示图片
                 $("#productcontent").html($scope.content);
-            }).error(function (data, header, config, status) {
+            }).error(function(data, header, config, status) {
                 //处理响应失败
                 $http({
                     url: 'json/Video.json',
                     method: 'GET'
-                }).success(function (data, header, config, status) {
+                }).success(function(data, header, config, status) {
                     //响应成功
                     $scope.secondtitle = data[0].date;
                     $scope.content = data[0].content;
@@ -96,11 +100,23 @@ function IndexCtrl($scope, $http) {
                     $("#productcontent").height(window.innerHeight - 100 + "px");
                     //用直接设置html的方法显示图片
                     $("#productcontent").html($scope.content);
-                }).error(function (data, header, config, status) {
+                }).error(function(data, header, config, status) {
                     //处理响应失败
                     alert('No data reply');
                 });
             });
         }
+    }
+
+   
+    $scope.logout = function() {
+        var r = confirm("确定退出？");
+        if (r == true) {
+            LocCache.clear('user');
+        window.location = '/login.html';
+        } else {
+            // alert("You pressed Cancel!");
+        }
+       
     }
 }
