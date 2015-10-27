@@ -8,17 +8,17 @@ function AboutCtrl($scope, $http) {
     //判断用户是否登录
     var usre = LocCache.load('user') || null;
     if(!usre){
-        window.location = '/login.html';
+        window.location = 'login.html';
     }
     //这里需要请求动态数据
     myDate = new Date();
-    if (currMinute == null || myDate.getMinutes() - currMinute > 1) {
+    if (currMinute == null || myDate.getMinutes() - currMinute > 20) {
         currMinute = myDate.getMinutes();
     }
     var alldata = new Array();
     //http请求
     $http({
-        url: 'json/about.json?timespan=' + currMinute,
+        url: 'http://120.24.230.139:8080/json/about.json?timespan=' + currMinute,
         //url: 'json/About.json',
         method: 'GET',
         params: { 'memo': 'test' }
@@ -78,7 +78,7 @@ function AboutCtrl($scope, $http) {
     $scope.ngClick = function (item) {
         var title = item.title;
         var secondtitle = GetDate();
-        var _url = 'json/abouts/about' + item.id + '.json';
+        var _url = 'http://120.24.230.139:8080/json/abouts/about' + item.id + '.json'+'timespan=' + currMinute;
         $scope.title = item.title;
         //http请求
         $http({
@@ -98,8 +98,28 @@ function AboutCtrl($scope, $http) {
             $("#productcontent").html($scope.content);
 
         }).error(function (data, header, config, status) {
-            //处理响应失败
-            alert('获取数据失败.');
+            _url = 'json/abouts/about' + item.id + '.json';
+            //http请求
+            $http({
+                url: _url,
+                method: 'GET'
+            }).success(function (data, header, config, status) {
+                //响应成功
+                $scope.content = data[0].content;
+                $scope.secondtitle = data[0].date;
+
+                //显示
+                fadeDashBoard();
+                $('.detail-all').addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
+                //当前窗口的高度，减去(标题的高+margin-top)
+                $("#productcontent").height(window.innerHeight - 100 + "px");
+                //用直接设置html的方法显示图片
+                $("#productcontent").html($scope.content);
+
+            }).error(function (data, header, config, status) {
+                //处理响应失败
+                alert('获取数据失败.');
+            });
         });
     }
 

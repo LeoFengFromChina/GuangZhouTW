@@ -9,17 +9,17 @@ function ProductTypeCtrl($scope, $http,$timeout) {
     //判断用户是否登录
     var usre = LocCache.load('user') || null;
     if(!usre){
-        window.location = '/login.html';
+        window.location = 'login.html';
     }
     myDate = new Date();
-    if (currMinute == null || myDate.getMinutes() - currMinute > 1) {
+    if (currMinute == null || myDate.getMinutes() - currMinute > 20) {
         currMinute = myDate.getMinutes();
     }
     //这里需要请求动态数据
     var alldata = new Array();
     //http请求
     $http({
-        url: 'json/ProductType.json?timespan=' + currMinute,
+        url: 'http://120.24.230.139:8080/json/ProductType.json?timespan=' + currMinute,
         method: 'GET'
     }).success(function (data, header, config, status) {
         //响应成功

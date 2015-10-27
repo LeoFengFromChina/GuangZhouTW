@@ -1,15 +1,23 @@
 ﻿/*********************************************************
 ------------------首页Controller--------------------
 *********************************************************/
+var currMinute;
+var myDate;
+var urlParam;
 function IndexCtrl($scope, $http) {
     //判断用户是否登录
     var usre = LocCache.load('user') || null;
     if (!usre) {
-        window.location = '/login.html';
+        window.location = 'login.html';
+    }
+    //这里需要请求动态数据
+    myDate = new Date();
+    if (currMinute == null || myDate.getMinutes() - currMinute > 20) {
+        currMinute = myDate.getMinutes();
     }
     var alldata = new Array();
     $http({
-        url: 'json/index.json?timespan=' + new Date(),
+        url: 'http://120.24.230.139:8080/json/index.json?timespan=' + currMinute,
         method: 'GET'
     }).success(function(data, header, config, status) {
         //响应成功
@@ -34,7 +42,7 @@ function IndexCtrl($scope, $http) {
     }).error(function(data, header, config, status) {
         //处理响应失败,请求本地
         $http({
-            url: 'json/Index.json',
+            url: 'json/index.json',
             method: 'GET'
         }).success(function(data, header, config, status) {
             //响应成功
@@ -73,7 +81,7 @@ function IndexCtrl($scope, $http) {
 
             $scope.title = item.title;
             $http({
-                url: 'json/Video.json?timespan=' + new Date(),
+                url: 'http://120.24.230.139:8080/json/Video.json?timespan=' + currMinute,
                 method: 'GET'
             }).success(function(data, header, config, status) {
                 //响应成功
@@ -113,7 +121,7 @@ function IndexCtrl($scope, $http) {
         var r = confirm("确定退出？");
         if (r == true) {
             LocCache.clear('user');
-        window.location = '/login.html';
+        window.location = 'login.html';
         } else {
             // alert("You pressed Cancel!");
         }
