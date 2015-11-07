@@ -6,7 +6,7 @@
     if (myDate.getFullYear() > 2015) {
         alert(alertText);
     } else {
-        if (myDate.getMonth() != 9) {
+        if (myDate.getMonth() != 10) {
 
             alert(alertText);
         }

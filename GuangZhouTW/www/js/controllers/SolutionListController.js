@@ -18,7 +18,7 @@ function SolutionListCtrl($scope, $http) {
     var alldata = new Array();
     //http请求
     $http({
-        url: 'http://120.24.230.139:8080/json/SolutionList.json?timespan=' + currMinute,
+        url: 'http://120.24.179.84/json/SolutionList.json?timespan=' + currMinute,
         method: 'GET'
     }).success(function (data, header, config, status) {
         //响应成功
@@ -76,7 +76,7 @@ function SolutionListCtrl($scope, $http) {
     $scope.ngClick = function (item) {
         //根据Item的产品id获取产品的详细内容。
         $scope.title = item.title;
-        var _url = 'http://120.24.230.139:8080/json/solutions/solution' + item.id + '.json?timespan=' + currMinute;
+        var _url = 'http://120.24.179.84/json/solutions/solution' + item.id + '.json?timespan=' + currMinute;
         //http请求
         $http({
             url: _url,

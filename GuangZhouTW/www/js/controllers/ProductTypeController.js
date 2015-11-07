@@ -19,7 +19,7 @@ function ProductTypeCtrl($scope, $http,$timeout) {
     var alldata = new Array();
     //http请求
     $http({
-        url: 'http://120.24.230.139:8080/json/ProductType.json?timespan=' + currMinute,
+        url: 'http://120.24.179.84/json/ProductType.json?timespan=' + currMinute,
         method: 'GET'
     }).success(function (data, header, config, status) {
         //响应成功

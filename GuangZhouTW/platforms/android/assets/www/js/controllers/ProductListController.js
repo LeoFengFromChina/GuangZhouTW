@@ -26,7 +26,7 @@ function ProductListCtrl($scope, $http) {
     var alldata = new Array();
     //http请求
     $http({
-        url: 'http://120.24.230.139:8080/json/ProductList.json?timespan=' + currMinute,
+        url: 'http://120.24.179.84/json/ProductList.json?timespan=' + currMinute,
         method: 'GET'
     }).success(function (data, header, config, status) {
         //响应成功
@@ -85,7 +85,7 @@ function ProductListCtrl($scope, $http) {
         //根据Item的产品id获取产品的详细内容。
 
         $scope.title = item.title;
-        var _url = 'http://120.24.230.139:8080/json/products/product' + item.id + '.json?timespan=' + currMinute;
+        var _url = 'http://120.24.179.84/json/products/product' + item.id + '.json?timespan=' + currMinute;
         //http请求
         $http({
             url: _url,
@@ -105,7 +105,7 @@ function ProductListCtrl($scope, $http) {
 
         }).error(function (data, header, config, status) {
             //处理响应失败
-            _url = 'http://120.24.230.139:8080/json/products/product' + item.id + '.json';
+            _url = 'http://120.24.179.84/json/products/product' + item.id + '.json';
             $http({
                 url: _url,
                 method: 'GET'

@@ -12,6 +12,7 @@
     "www\\json\\components\\component3.json",
     "www\\json\\components\\component7.json",
     "bower.json",
+    "www\\images\\login_bg.png",
     "plugins\\org.apache.cordova.dialogs\\plugin.xml",
     "www\\js\\controllers\\ServiceController.js",
     "www\\fonts\\demo-icomoon.eot",
@@ -42,6 +43,7 @@
     "res\\icons\\windows\\StoreLogo.scale-100.png",
     "www\\images\\gcal\\db001.jpg",
     "www\\images\\gcal\\db002.jpg",
+    "www\\js\\controllers\\LoginController.js",
     "plugins\\org.apache.cordova.dialogs\\NOTICE",
     "www\\images\\solution\\build.png",
     "www\\images\\gcal\\gldql002.jpg",
@@ -94,6 +96,7 @@
     "www\\images\\arrow-left-c.png",
     "plugins\\org.apache.cordova.dialogs\\src\\ubuntu\\notification.cpp",
     "res\\icons\\windows\\StoreLogo.scale-240.png",
+    "www\\login.html",
     "www\\images\\logo\\TW_logo_blue.jpg",
     "res\\screens\\ios\\screen-ipad-landscape.png",
     "www\\images\\gcal\\wdgc001.jpg",
@@ -163,6 +166,7 @@
     "www\\json\\solutions\\solution8.json",
     "res\\icons\\wp8\\Background.png",
     "plugins\\org.apache.cordova.dialogs\\doc\\pl\\index.md",
+    "www\\css\\login.css",
     "www\\index.html",
     "plugins\\org.apache.cordova.dialogs\\www\\firefoxos\\danger.png",
     "res\\icons\\ios\\icon-40.png",
@@ -212,6 +216,7 @@
     "www\\images\\solution\\xh.png",
     "www\\fonts\\demo-icomoon.ttf",
     "res\\icons\\android\\icon-96-xhdpi.png",
+    "www\\css\\reset.css",
     "www\\images\\firefox.png",
     "www\\images\\about\\index_19.png",
     "www\\images\\about\\index_17.png",
@@ -258,19 +263,10 @@
     "www\\images\\product\\lift2.png",
     "res\\icons\\windows\\Square44x44Logo.scale-240.png",
     "res\\screens\\android\\screen-mdpi-portrait.png",
-    "www\\fonts\\demo-icomoon.woff",
-    "www\\images\\login_bg.png",
-    "www\\js\\controllers\\LoginController.js",
-    "www\\login.html",
-    "www\\css\\login.css",
-    "www\\css\\reset.css"
+    "www\\fonts\\demo-icomoon.woff"
   ],
-  "deletedFilesIos": [
-    "login.html"
-  ],
-  "addedPluginsIos": [
-    "org.apache.cordova.dialogs@0.3.0"
-  ],
+  "deletedFilesIos": [],
+  "addedPluginsIos": [],
   "deletedPluginsIos": [],
   "changedFiles": [],
   "deletedFiles": [],

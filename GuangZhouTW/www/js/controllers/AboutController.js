@@ -18,7 +18,7 @@ function AboutCtrl($scope, $http) {
     var alldata = new Array();
     //http请求
     $http({
-        url: 'http://120.24.230.139:8080/json/about.json?timespan=' + currMinute,
+        url: 'http://120.24.179.84/json/about.json?timespan=' + currMinute,
         //url: 'json/About.json',
         method: 'GET',
         params: { 'memo': 'test' }
@@ -78,7 +78,7 @@ function AboutCtrl($scope, $http) {
     $scope.ngClick = function (item) {
         var title = item.title;
         var secondtitle = GetDate();
-        var _url = 'http://120.24.230.139:8080/json/abouts/about' + item.id + '.json'+'timespan=' + currMinute;
+        var _url = 'http://120.24.179.84/json/abouts/about' + item.id + '.json'+'timespan=' + currMinute;
         $scope.title = item.title;
         //http请求
         $http({

@@ -17,7 +17,7 @@ function IndexCtrl($scope, $http) {
     }
     var alldata = new Array();
     $http({
-        url: 'http://120.24.230.139:8080/json/index.json?timespan=' + currMinute,
+        url: 'http://120.24.179.84/json/index.json?timespan=' + currMinute,
         method: 'GET'
     }).success(function(data, header, config, status) {
         //响应成功
@@ -81,7 +81,7 @@ function IndexCtrl($scope, $http) {
 
             $scope.title = item.title;
             $http({
-                url: 'http://120.24.230.139:8080/json/Video.json?timespan=' + currMinute,
+                url: 'http://120.24.179.84/json/Video.json?timespan=' + currMinute,
                 method: 'GET'
             }).success(function(data, header, config, status) {
                 //响应成功
