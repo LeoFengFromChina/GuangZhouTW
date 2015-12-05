@@ -53,5 +53,14 @@
           "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
           "url": "product-type",
           "memo": "普通施工升降机"
+      },{
+          "id": 7,
+          "typeid": 4,
+          "pagetype": "div",
+          "title": "SC货运施工升降机",
+          "mainstyle": "background-image: url('images/product/lift3.png');background-color:#EDEDED;border-color: #C5C1AA;    border-width: 1px;border-style: solid;",
+          "titlestyle": "display:block;color: #0093D6;font-family: 'Microsoft YaHei';",
+          "url": "product-type",
+          "memo": "SC货运施工升降机"
       }
     ]
