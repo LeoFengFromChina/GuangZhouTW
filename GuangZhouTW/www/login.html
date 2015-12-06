@@ -27,11 +27,28 @@
                 <input type="text" name="username" class="username" placeholder="请输入您的用户名！" ng-model='loginUser.user' ng-change='hideError()' required>
             </div>
             <div class="from_itme">
-                <input type="password" name="password" class="password" placeholder="请输入您的用户密码！" ng-model='loginUser.password'  ng-change='hideError()' required>
+                <input type="password" name="password" class="password" placeholder="请输入您的用户密码！" ng-model='loginUser.password' ng-change='hideError()' required>
             </div>
- 
-            <button type="submit" class="submit_button" ng-click="login()" ng-disabled=loginForm.$invalid>登录</button>
-            <div class="error" ng-show="iserror">{{msg}}</div>
+            <div class="itme">
+                <button type="submit" class="submit_button"  ng-class="{true:'disabled'}[isloading]" ng-click="login()" ng-disabled=loginForm.$invalid>登录</button>
+                <div class="loading" ng-show="isloading">
+                    <div class="sk-circle">
+                        <div class="sk-circle1 sk-child"></div>
+                        <div class="sk-circle2 sk-child"></div>
+                        <div class="sk-circle3 sk-child"></div>
+                        <div class="sk-circle4 sk-child"></div>
+                        <div class="sk-circle5 sk-child"></div>
+                        <div class="sk-circle6 sk-child"></div>
+                        <div class="sk-circle7 sk-child"></div>
+                        <div class="sk-circle8 sk-child"></div>
+                        <div class="sk-circle9 sk-child"></div>
+                        <div class="sk-circle10 sk-child"></div>
+                        <div class="sk-circle11 sk-child"></div>
+                        <div class="sk-circle12 sk-child"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="error" ng-show="iserror" ng-bind="msg"></div>
         </form>
     </div>
     <!-- Javascript -->

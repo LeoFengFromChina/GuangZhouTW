@@ -11,6 +11,7 @@ angular.module('app', [])
         if (usre) {
             window.location = 'index.html';
         }
+      
         $scope.iserror = false;
          $scope.msg = '';
         $scope.loginUser = {};
@@ -21,7 +22,17 @@ angular.module('app', [])
         $scope.login = function(item) {
 
             var _url = 'http://120.24.179.84/login.ashx';
-           
+            if(angular.isUndefined( $scope.loginUser.user)){
+                $scope.iserror = true;
+                $scope.msg = '请输入账号';  
+                return false; 
+            }
+            if(angular.isUndefined( $scope.loginUser.password)){
+                $scope.iserror = true;
+                $scope.msg = '请输入密码';  
+                return false; 
+            }
+            $scope.isloading=true;
             var appLogin_params = {
                 'userName': $scope.loginUser.user,
                 'psw': MD5($scope.loginUser.password),
@@ -37,15 +48,19 @@ angular.module('app', [])
                 }
 
             ).success(function(data, status) {
+                $scope.isloading=false;
                 if(data==0){
+
                      LocCache.save('user', data);
                      window.location = 'index.html';
+
                 }else{
                     $scope.iserror = true;
                     $scope.msg = '账号或密码错误';
                 }
                
             }).error(function(data, status) {
+                $scope.isloading=false;
                 $scope.iserror = true;
                 $scope.msg = '账号或密码错误';
             });
